@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
     tools:context="io.lavanderiapp.lavanderiapp.io.lavanderiapp.banano.MainActivity">
 
-    <WebView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webview"/>
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LavanderiApp"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="LavanderíApp es una plataforma social de alto impacto que resuelve de forma disruptiva el servicio de lavandería a domicilio."
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Todos los servicios son atendidos por alguna de nuestras LavaPers certificadas, quienes con amor procesan y cuidan tu ropa"
+        />
+
+
+    <Button
+        android:id="@+id/btn_chatbot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorFB"
+        android:text="Chatea con nuestro Bot"
+        android:textAllCaps="false"
+        android:textColor="#ffff" />
+
+    <!--<WebView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/webview"/>-->
+</LinearLayout>
